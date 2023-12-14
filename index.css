@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+img{
+    border:0;
+    vertical-align:top;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+body{
+    letter-spacing:-2px;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* header CSS */
+#header{
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+#header .header_wrap{
+    width:100%;
+    height:106px;
+    background-color:#fff;
+    box-sizing:border-box;
+}
+#header .logo{
+    width:152px;
+    margin:0px auto;
+    padding-top:53px;
+    height:49px;
+    text-indent:-99999px;
+    cursor:pointer;
+    background:url("images/logo.png") no-repeat center / 100%;
+}
+#header .gnb_wrap{
+    width:100%;
+    height:53px;
+    background-color: #000000a5;
+}
+#header .gnb_wrap .gnb{
+    width:640px;
+    margin:0px auto;
+}
+#header .gnb_wrap .gnb>li{
+    width:160px;
+    line-height:53px;
+    float:left;
+    text-align:center;
+}
+#header .gnb_wrap .gnb>li:hover{
+    background-color:#ffffff57;
+}
+#header .gnb_wrap .gnb>li>a{
+    display: block;
+    font-size:20px;
+    color:#fff;
+}
+#header .gnb_wrap .gnb>li .sub{
+    display:none;
+}
+#header .gnb_wrap .gnb>li .sub>li{
+    background-color:#ffffff;
+}
+#header .gnb_wrap .gnb>li .sub>li:hover a{
+    color:#222;
+}
+#header .gnb_wrap .gnb>li .sub>li>a{
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:-1px;
+    color:#666;
+}
+/* section CSS */
+#section{
+    width:100%;
+    margin-top:106px;
+}
+#section .main{
+    width:100%;
+    height:503px;
+    background:url("images/main_banner.jpg") no-repeat center / cover;
+}
+#section .contain{
+    width:100%;
+    height:883px;
+    background:url("images/section_image.jpg") no-repeat center / cover;
+}
+#section .contain .txt{
+    width:500px; margin:0px auto;
+    text-align:center;
+}
+#section .contain .txt>h2{
+    width:500px;
+    height:40px;
+    background:url("images/title_product.png") no-repeat bottom / 100%;
+    padding-top:100px;
+    text-indent:-99999px;
+}
+#section .contain .txt>h3:before{
+    content:"";
+    display:block;
+    width:60px;
+    height:2px;
+    margin:35px auto;
+    background-color: #000;
+}
+#section .contain .txt>h3{
+    font-size:24px;
+    font-weight:500;
+    margin-bottom:100px;
+}
+#section .contain .list{
+    width:1236px; margin:0px auto;
+}
+#section .contain .list>li{
+    width:404px;
+    height:201px;
+    margin-bottom:12px;
+    float:left;
+    text-indent:-99999px;
+    border-bottom:1px solid #222;
+    background:#efefef url("images/ico_product.png") no-repeat top / 100%;
+}
+#section .contain .list>li:before{
+    content:"";
+    display:block;
+    width:404px;
+    height:201px;
+    float:left;
+    background-color: #0000002f;
+    opacity:0;
+    transition:all 0.5s;
+    cursor:pointer;
+}
+#section .contain .list>li:hover:before{
+    opacity:1;
+}
+#section .contain .list>li:nth-child(2){
+    margin:0px 12px;
+    background-position-y:-201px;
+}
+#section .contain .list>li:nth-child(3){
+    background-position-y:-402px;
+}
+#section .contain .list>li:nth-child(4){
+    background-position-y:-603px;
+}
+#section .contain .list>li:nth-child(5){
+    margin:0px 12px;
+    background-position-y:-804px;
+}
+#section .contain .list>li:last-child{
+    background-position-y:-1005px;
+}
